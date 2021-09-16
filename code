@@ -1,9 +1,12 @@
-def f(a,b):
-    c=1
+def f(a, b):
+    c = 1
+    if b<0:
+        return 'Неверная степень.'
     for i in range(b):
-        c=c*a
+        c = c * a
     return c
-    
+
+
 a = int(input())
 b = int(input())
-print(f(a,b))
+print(f(a, b))
